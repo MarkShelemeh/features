@@ -11,3 +11,7 @@
 2. Перейдіть до потрібної папки:
    ```powershell
    cd "C:\Users\Ім'я\Documents\МояПапка"
+
+3. Виконайте команду для зміни назв файлів:
+   ```powershell
+   Get-ChildItem -File | Rename-Item -NewName { "ім'я_" + $_.Name }
